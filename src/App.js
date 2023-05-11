@@ -1,11 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/layouts/Navbar';
 
 function App() {
   return (
-    <div className="bg-purple-500">
-      <h1 className="text-2xl">Hello</h1>
-    </div>
+    <Router>
+      <div className="flex flex-col justify-between h-screen">
+        <Navbar title='Github Scraper' />
+
+        <main>
+          Content
+        </main>
+      </div>
+    </Router>
   );
 }
 
