@@ -32,14 +32,14 @@ const UserSearch = () => {
             <div className="relative">
               <input
                 type="text"
-                className="w-full pr-40 bg-gray-200 input input-lg text-black"
+                className="w-full pr-40 bg-[#3E2C41] input input-lg text-[#6E85B2]"
                 placeholder="Search"
                 value={text}
                 onChange={handleChange}
               />
               <button
                 type="submit"
-                className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg"
+                className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg bg-[#5C527F]"
               >
                 Go
               </button>
@@ -51,7 +51,7 @@ const UserSearch = () => {
         <div>
           <button
             onClick={() => dispatch({ type: "CLEAR_USERS" })}
-            className="btn btn-ghost btn-lg"
+            className="btn btn-ghost btn-lg "
           >
             Clear
           </button>
